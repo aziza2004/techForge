@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Techforge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #001eff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #0008ff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1900ff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .course-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .course-item h3 {
+            font-size: 1.5rem;
+            color: #1100ff;
+        }
+
+        .course-item p {
+            font-size: 1rem;
+            color: #000000;
+        }
+
+        .faculty-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .faculty-list li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #0a02ff;
+        }
+
+        .testimonial {
+            font-style: italic;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            font-size: 1rem;
+        }
+
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-section form input,
+        .contact-section form textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-section form button {
+            background-color: #0800ff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-section form button:hover {
+            background-color: #0800ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Techforge</h1>
+    <p>Empowering Your Future with Cutting-Edge Online Courses</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="about">
+    <h2>About Techforge</h2>
+    <p>Techforge is an online learning academy dedicated to helping you forge your future with the latest technology and software development skills. Whether you're starting out or looking to advance your career, our courses are designed to fit your schedule, no matter where you are in the world. With industry-leading instructors, hands-on projects, and a supportive learning community, we empower our students to succeed in today's competitive tech landscape.</p>
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+    <p>We offer a wide range of courses that cater to all skill levels, from beginner to advanced. Whether you're interested in web development, data science, or mobile app creation, our expert instructors have you covered.</p>
+    <div class="courses-grid">
+        <div class="course-item">
+            <h3>Full-Stack Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript, and modern frameworks like React and Node.js to build full-featured websites and web applications.</p>
+        </div>
+        <div class="course-item">
+            <h3>Data Science with Python</h3>
+            <p>Master Python programming, data analysis, and machine learning with our comprehensive data science course.</p>
+        </div>
+        <div class="course-item">
+            <h3>Mobile App Development</h3>
+            <p>Build Android and iOS mobile apps using Flutter, React Native, and native development techniques.</p>
+        </div>
+        <div class="course-item">
+            <h3>Cybersecurity Essentials</h3>
+            <p>Understand the fundamentals of cybersecurity and learn how to protect systems and data from attacks.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faculty">
+    <h2>Meet Our Faculty</h2>
+    <p>Our instructors are seasoned professionals with years of industry experience. They bring real-world knowledge into the virtual classroom, ensuring you learn the latest skills needed to succeed.</p>
+    <ul class="faculty-list">
+        <li>John Doe – Full-Stack Web Developer with 15+ years of experience</li>
+        <li>Jane Smith – Data Scientist specializing in AI and machine learning</li>
+        <li>Michael Brown – Mobile App Developer and Flutter Expert</li>
+        <li>Sarah Johnson – Cybersecurity Specialist with extensive industry knowledge</li>
+    </ul>
+</section>
+
+<section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+        <p>"Techforge helped me land my dream job as a web developer! The courses were practical and the instructors were very supportive." – Alex M.</p>
+    </div>
+    <div class="testimonial">
+        <p>"I learned so much from the data science course. The hands-on projects made all the difference in understanding complex topics." – Sarah K.</p>
+    </div>
+    <div class="testimonial">
+        <p>"Techforge's flexible learning schedule allowed me to balance my work and studies seamlessly. Highly recommended!" – David P.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-section">
+        <p>Have any questions or want to learn more about our courses? Reach out to us below!</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Techforge. All rights reserved. | Empowering Your Future</p>
+</footer>
+
+</body>
+</html>
+
+
